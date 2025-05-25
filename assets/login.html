@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <!-- ==================== CSS ==================== -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- ==================== Scripts ==================== -->
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- ==================== HEADER ==================== -->
+  <header id="header">
+    <a id="logo" href="./index.html">
+      <img src="./img/logo-hc.png" alt="Logo do Hospital das Clínicas" />
+    </a>
+    <nav id="nav">
+      <button id="btn-mobile">Menu<span id="hamburger"></span></button>
+      <ul id="menu">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="./integrantes.html">Integrantes</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        <li><a href="./solucao.html">Acessibilidade</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ==================== MAIN ==================== -->
+  <main>
+    <div class="acessibilidade-botoes">
+      <button onclick="aumentarFonte()">A+</button>
+      <button onclick="diminuirFonte()">A−</button>
+      <button onclick="alternarTema()">🌓 Tema</button>
+    </div>
+    <!-- ==================== FORMULÁRIO DE LOGIN ==================== -->
+    <form id="form-login">
+      <label for="usuario">Usuário:</label>
+      <input type="text" id="usuario" name="usuario" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+    <div id="login-feedback"></div>
+    <!-- ==================== FOOTER ==================== -->
+  </main>
+  <footer id="rodape">
+    <p>
+      &copy; 2025 Hospital da Clínicas - Todos os direitos reservados
+    </p>
+    <div class="redes">
+      <a aria-label="Facebook" href="https://www.facebook.com/hospitaldasclinicasdafmusp" target="_blank">
+        <img alt="Facebook" src="./img/icons-facebook.png" />
+      </a>
+      <a aria-label="Instagram" href="https://www.instagram.com/hospitalhcfmusp/" target="_blank">
+        <img alt="Instagram" src="./img/icons-instagram.png" />
+      </a>
+      <a aria-label="YouTube" href="https://www.youtube.com/@hospitaldasclinicasdafmusp3623" target="_blank">
+        <img alt="YouTube" src="./img/icons-youtube.png" />
+      </a>
+      <a aria-label="LinkedIn" href="https://www.linkedin.com/company/hcfmusp/" target="_blank">
+        <img alt="LinkedIn" src="./img/icons-linkedin.png" />
+      </a>
+      <a aria-label="Twitter" href="https://x.com/hospitalHCFMUSP" target="_blank">
+        <img alt="Twitter" src="./img/icons-twitter.png" />
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
