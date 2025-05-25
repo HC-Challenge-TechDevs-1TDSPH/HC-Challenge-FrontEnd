@@ -412,3 +412,196 @@ summary {
   transform: scale(1.2);
   opacity: 0.8;
 }
+
+/* ===== Acessibilidade ===== */
+body {
+  font-size: 100%;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode a {
+  color: #90cdf4;
+}
+
+body.dark-mode #header,
+body.dark-mode #rodape {
+  background: #121212;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #aaa;
+}
+
+body.dark-mode form label {
+  color: #f1f1f1;
+}
+
+body.dark-mode #menu a {
+  color: var(--branco);
+}
+
+/* Garante que nas páginas claras os textos do formulário fiquem pretos */
+form label,
+input,
+textarea,
+#form-login label,
+#form-contato label {
+  color: #000;
+}
+
+/* Botões de acessibilidade */
+.acessibilidade-botoes {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.acessibilidade-botoes button {
+  padding: 0.5rem 1rem;
+  background: var(--azul-principal);
+  color: var(--branco);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.acessibilidade-botoes button:hover {
+  background: var(--azul-hover);
+}
+
+
+/* Ajuste: manter inputs brancos no tema escuro */
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 1px solid #444;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #666;
+}
+
+body.dark-mode form label {
+  color: #000;
+}
+
+
+/* Ajuste: botão de mais informações */
+
+body.dark-mode #info-toggle {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #999;
+}
+
+
+/* Ajuste: texto do info-extra no tema escuro */
+
+body.dark-mode #info-extra {
+  color: #000 !important;
+}
+
+
+/* Ajuste: texto da descrição dos vídeos no tema escuro */
+
+body.dark-mode .video-card p,
+body.dark-mode .video-card strong {
+  color: #000 !important;
+}
+
+
+/* Ajuste: botões de acessibilidade no modo escuro */
+
+body.dark-mode .acessibilidade-botoes button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+body.dark-mode .acessibilidade-botoes button:hover {
+  background-color: #eee;
+}
+
+
+/* Ajuste: fundo preto, texto e divisões brancos no menu hamburguer */
+
+body.dark-mode #menu {
+  background-color: #000 !important;
+}
+
+body.dark-mode #menu a {
+  color: var(--branco) !important;
+  background: none;
+  border-radius: 0;
+  text-align: left;
+  margin: 0;
+}
+
+body.dark-mode #menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode #menu a:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* Ajuste: padding à esquerda no menu hambúrguer */
+
+body.dark-mode #menu a {
+  padding-left: 1.5rem !important;
+}
+
+
+/* Ajuste: consistência de tamanho nos botões de acessibilidade */
+
+.acessibilidade-botoes button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  box-shadow: none;
+  font-weight: normal;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+body.dark-mode .acessibilidade-botoes button {
+  border-color: #ccc;
+}
+
+
+/* Ajuste: altura nos botões de acessibilidade */
+
+.acessibilidade-botoes button {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Ajuste: espaçamento consistente do menu no tema escuro (desktop/tablet) */
+
+body.dark-mode #menu a {
+  margin: 0 !important;
+  padding: 0.5rem !important;
+  border-bottom: none;
+}
