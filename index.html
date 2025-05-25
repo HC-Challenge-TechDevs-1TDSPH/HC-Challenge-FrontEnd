@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saúde Digital - Início</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+  <header id="header">
+    <a id="logo" href="./index.html">
+      <img src="./assets/img/logo-hc.png" alt="Logo do Hospital das Clínicas" />
+    </a>
+    <nav id="nav">
+      <button id="btn-mobile">Menu<span id="hamburger"></span></button>
+      <ul id="menu">
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./assets/integrantes.html">Integrantes</a></li>
+        <li><a href="./assets/faq.html">FAQ</a></li>
+        <li><a href="./assets/contato.html">Contato</a></li>
+        <li><a href="./assets/solucao.html">Acessibilidade</a></li>
+        <li><a href="./assets/login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="acessibilidade-botoes">
+      <button onclick="aumentarFonte()">A+</button>
+      <button onclick="diminuirFonte()">A−</button>
+      <button onclick="alternarTema()">🌓 Tema</button>
+    </div>
+
+    <section class="hero">
+      <h1>Facilitando o acesso à saúde digital</h1>
+      <p>Uma plataforma pensada para quem tem dificuldade com tecnologia. Simples, acessível e feita para você.</p>
+      <a href="./assets/solucao.html" class="btn-cta">Conheça a Solução</a>
+    </section>
+
+    <section class="recursos">
+      <h2>O que você encontra aqui</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Vídeos Tutoriais</h3>
+          <p>Aprenda a usar os serviços do Hospital com vídeos simples e rápidos.</p>
+          <a href="./assets/solucao.html">Ver vídeos</a>
+        </div>
+        <div class="card">
+          <h3>Dúvidas Frequentes</h3>
+          <p>Encontre respostas para as perguntas mais comuns.</p>
+          <a href="./assets/faq.html">Acessar FAQ</a>
+        </div>
+        <div class="card">
+          <h3>Fale Conosco</h3>
+          <p>Precisa de ajuda? Entre em contato com a nossa equipe.</p>
+          <a href="./assets/contato.html">Abrir contato</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>Este projeto foi desenvolvido para o Challenge 2025 em parceria com o Hospital das Clínicas,
+        com o objetivo de ajudar pessoas idosas ou com dificuldade digital a acessar serviços de saúde.</p>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <p>&copy; 2025 Hospital da Clínicas - Todos os direitos reservados</p>
+    <div class="redes">
+      <a href="https://www.facebook.com/hospitaldasclinicasdafmusp" target="_blank"><img
+          src="./assets/img/icons-facebook.png" alt="Facebook" /></a>
+      <a href="https://www.instagram.com/hospitalhcfmusp/" target="_blank"><img src="./assets/img/icons-instagram.png"
+          alt="Instagram" /></a>
+      <a href="https://www.youtube.com/@hospitaldasclinicasdafmusp3623" target="_blank"><img
+          src="./assets/img/icons-youtube.png" alt="YouTube" /></a>
+      <a href="https://www.linkedin.com/company/hcfmusp/" target="_blank"><img src="./assets/img/icons-linkedin.png"
+          alt="LinkedIn" /></a>
+      <a href="https://x.com/hospitalHCFMUSP" target="_blank"><img src="./assets/img/icons-twitter.png"
+          alt="Twitter" /></a>
+    </div>
+  </footer>
+</body>
+
+</html>
