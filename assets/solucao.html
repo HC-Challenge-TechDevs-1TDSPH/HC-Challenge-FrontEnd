@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solução</title>
+
+    <!-- ==================== CSS ==================== -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- ==================== Scripts ==================== -->
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header id="header">
+        <a id="logo" href="./index.html">
+            <img src="./img/logo-hc.png" alt="Logo do Hospital das Clínicas" />
+        </a>
+        <nav id="nav" aria-label="Menu principal">
+            <button id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                Menu<span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="..//index.html">Início</a></li>
+                <li><a href="./integrantes.html">Integrantes</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./solucao.html">Acessibilidade</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ==================== MAIN ==================== -->
+    <main>
+        <div class="acessibilidade-botoes">
+            <button onclick="aumentarFonte()">A+</button>
+            <button onclick="diminuirFonte()">A−</button>
+            <button onclick="alternarTema()">🌓 Tema</button>
+        </div>
+        <h2>Vídeos Tutoriais</h2>
+        <p>Aqui você encontra vídeos que explicam como usar a plataforma e os serviços digitais do Hospital das
+            Clínicas.</p>
+
+        <!-- ==================== VÍDEOS ==================== -->
+        <section class="videos-container" aria-label="Lista de vídeos tutoriais">
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/rT9U8HlXaRw"
+                    title="Tutorial 1 - [Teleatendimento] Orientação aos Pacientes" allowfullscreen></iframe>
+                <p><strong>Tutorial 1:</strong> [Teleatendimento] Orientação aos Pacientes</p>
+            </article>
+
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/Gl5FnbWRCCM"
+                    title="Tutorial 2 - Como acessar uma teleconsulta? (Celular Android)" allowfullscreen></iframe>
+                <p><strong>Tutorial 2:</strong> Como acessar uma teleconsulta? (Celular Android)</p>
+            </article>
+
+            <article class="video-card">
+                <iframe src="https://www.youtube.com/embed/0sqNK7oZfwY"
+                    title="Tutorial 3 - Como acessar uma teleconsulta? (Celular iOS)" allowfullscreen></iframe>
+                <p><strong>Tutorial 3:</strong> Como acessar uma teleconsulta? (Celular iOS)</p>
+            </article>
+
+        </section>
+        <!-- ==================== FOOTER ==================== -->
+    </main>
+    <footer id="rodape">
+        <p>
+            &copy; 2025 Hospital da Clínicas - Todos os direitos reservados
+        </p>
+        <div class="redes">
+            <a aria-label="Facebook" href="https://www.facebook.com/hospitaldasclinicasdafmusp" target="_blank">
+                <img alt="Facebook" src="./img/icons-facebook.png" />
+            </a>
+            <a aria-label="Instagram" href="https://www.instagram.com/hospitalhcfmusp/" target="_blank">
+                <img alt="Instagram" src="./img/icons-instagram.png" />
+            </a>
+            <a aria-label="YouTube" href="https://www.youtube.com/@hospitaldasclinicasdafmusp3623" target="_blank">
+                <img alt="YouTube" src="./img/icons-youtube.png" />
+            </a>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/company/hcfmusp/" target="_blank">
+                <img alt="LinkedIn" src="./img/icons-linkedin.png" />
+            </a>
+            <a aria-label="Twitter" href="https://x.com/hospitalHCFMUSP" target="_blank">
+                <img alt="Twitter" src="./img/icons-twitter.png" />
+            </a>
+        </div>
+    </footer>
+
+    <!-- ==================== TELEGRAM ICON ==================== -->
+    <a class="telegram-icon" href="https://t.me/Tiktoquinho_bot" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat com suporte via Telegram">
+        <img src="./img/icons-chatbot.gif" alt="Ícone do Chatbot do Telegram">
+    </a>
+</body>
+
+</html>
